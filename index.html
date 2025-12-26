@@ -17,6 +17,9 @@ layout: null
             background-size: 20px 20px;
             opacity: 0.1;
         }
+        .app-mockup-placeholder {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 overflow-x-hidden">
@@ -61,11 +64,14 @@ layout: null
                     </div>
                 </div>
 
-                <!-- Hero Image -->
-                <div class="relative lg:absolute lg:right-0 lg:w-1/2 flex justify-center lg:justify-end">
-                    <!-- Phone Frame -->
-                    <div class="relative w-[280px] sm:w-[320px] lg:w-[360px] rounded-[3rem] border-8 border-gray-900 bg-gray-900 shadow-2xl z-10 overflow-hidden transform rotate-[-6deg] hover:rotate-0 transition-transform duration-500">
-                        <img src="assets/screenshots/home.png" alt="App Home Screen" class="w-full h-full object-cover">
+                <!-- Hero Placeholder -->
+                <div class="relative flex justify-center lg:justify-end">
+                    <div class="relative w-[280px] sm:w-[320px] lg:w-[360px] aspect-[9/19] rounded-[3rem] border-8 border-gray-900 bg-gray-900 shadow-2xl z-10 overflow-hidden transform rotate-[-6deg] hover:rotate-0 transition-transform duration-500 flex items-center justify-center">
+                        <div class="app-mockup-placeholder w-full h-full flex flex-col items-center justify-center p-8 text-center text-white">
+                            <img src="assets/images/logo.png" alt="Splice Logo" class="w-20 h-20 rounded-2xl mb-6 shadow-lg">
+                            <h2 class="text-2xl font-bold mb-2">Splice</h2>
+                            <p class="text-sm opacity-90">Your smart receipt assistant</p>
+                        </div>
                     </div>
                     <!-- Decorative blob -->
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-300 rounded-full blur-3xl opacity-30 pointer-events-none"></div>
@@ -119,34 +125,41 @@ layout: null
         </div>
     </section>
 
-    <!-- Feature Showcase 1 -->
+    <!-- Detailed Feature -->
     <section class="py-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2">
-                    <div class="relative mx-auto w-[280px] sm:w-[320px] rounded-[2.5rem] border-[6px] border-gray-900 shadow-2xl overflow-hidden">
-                         <img src="assets/screenshots/smart-split.png" alt="Smart Splitting UI" class="w-full">
+                    <div class="bg-indigo-600 rounded-3xl p-12 text-white shadow-2xl">
+                        <div class="text-4xl mb-6">🎯</div>
+                        <h2 class="text-3xl font-bold mb-6">Precision Control</h2>
+                        <p class="text-lg text-indigo-100 mb-6">
+                            Splitting evenly is easy. But life isn't always even. Splice gives you the tools to handle any situation.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-indigo-500 text-white mr-3">✓</span>
+                                <span class="text-indigo-50">Split individual items by percentage or shares.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-indigo-500 text-white mr-3">✓</span>
+                                <span class="text-indigo-50">Add tax and tip automatically proportional to what each person ordered.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-indigo-500 text-white mr-3">✓</span>
+                                <span class="text-indigo-50">Simple summary of who owes who.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="lg:w-1/2">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Precision Control</h2>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Designed for groups</h2>
                     <p class="text-lg text-gray-600 mb-6">
-                        Splitting evenly is easy. But life isn't always even.
+                        Whether you’re living with roommates or traveling with friends, the app provides a single source of truth for who owes what.
                     </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-green-100 text-green-500 mr-3">✓</span>
-                            <span class="text-gray-700">Split individual items by percentage or shares.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-green-100 text-green-500 mr-3">✓</span>
-                            <span class="text-gray-700">Add tax and tip automatically proportional to what each person ordered.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-green-100 text-green-500 mr-3">✓</span>
-                            <span class="text-gray-700">Simple summary of who owes who.</span>
-                        </li>
-                    </ul>
+                    <p class="text-lg text-gray-600">
+                        Stop the back-and-forth and the "who paid for what" arguments. Splice makes it easy to stay friends and keep your finances in order.
+                    </p>
                 </div>
             </div>
         </div>
